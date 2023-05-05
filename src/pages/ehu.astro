@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Dark from '../components/Dark.astro';
+---
+<meta charset="UTF-8">
+<body class="bg-black astro-5BLMO7YK"></body> 
+
+<Layout title="Furkanflix"> 
+     <main>
+		<ul role="list" class="link-card-grid">
+			<Dark />
+		</ul>
+	 </main>   
+
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
